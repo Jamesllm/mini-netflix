@@ -19,17 +19,8 @@ El proyecto colaborativo <b>"Mini Netflix"</b> es un proyecto base (PA) cuyo obj
 
 
 ## Team members:
-
-|Nº|    First and last name        | Git Hub                                             |
-|-| ------------------------------ | --------------------------------------------------- |
-|1|Campos Terrones, Jose Paul      |[JosePaulCT](https://github.com/JosePaulCT)          |
-|2|Ibañez Chanamé, Ralph Junior    |[junior-iba1904](https://github.com/junior-iba1904)  |
-|3|Llapapasca Montes, Ronal James  |[Jamesllm](https://github.com/Jamesllm)              |
-|4|Pastor Juárez, Karol Estefani   |[KarolPastor](https://github.com/KarolPastor)        |
-|5|Romero Collazos, Juan Bladimir  |[INGSYSTEM](https://github.com/INGSYSTEM)            |
-|6|Salazar Soplaouco, Franco Alexis|[Ale3P](https://github.com/Ale3P)                    |
-|7|Sanandres Vela, Juan Piero Aarón|[Dark-JuanpiDev](https://github.com/Dark-JuanpiDev)  |
-|8|Vasquez Villegas, Kevin Jeferson|[kevin11jeferson](https://github.com/kevin11jeferson)|
+<p>Desing: Llapapasca Montes, Ronal James</p> 
+<p>Color Palet: Romero Collazos, Juan Bladimir</p> 
 
 ## Demo
 
