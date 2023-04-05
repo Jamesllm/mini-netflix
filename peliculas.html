@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/inicio.css">
+    <script src="https://kit.fontawesome.com/975d1954ab.js" crossorigin="anonymous"></script>
+    <style>
+        .info-serie{
+            margin-top: 38rem !important;
+        }
+        .display-active{
+            transform: translateY(45px) !important;
+        }
+    </style>
+</head>
+<body>
+    <div class="content-o-s">
+        <div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
+            <div class="open-menu" onclick="openMenu()"><i class="fa-solid fa-bars"></i></div>
+            <h1>FilmHub</h1>
+        </div>
+        <div class="search"><i class="fa-solid fa-magnifying-glass"></i></div>
+    </div>
+    <div class="wrapper">
+        <div class="sidenav">
+            <div class="close-modal" onclick="closeMenu()"><i class="fa-solid fa-xmark"></i></div>
+            <div>
+                <img src="./img/logo.png" alt="">
+                <div class="list">
+                    <a href="./index.html" class="active">
+                        <p>Series</p>
+                    </a>
+                    <a href="./peliculas.html">
+                        <p>Peliculas</p>
+                    </a>
+                    <a href="">
+                        <p>Novedades</p>
+                    </a>
+                    <a href="#miLista">
+                        <p>Mi Lista</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div id="series" class="">
+                <video class="vid" id="video-overlay" loop></video>
+                <div class="capa">
+                    <div class="info-serie">
+                        <div id="display">
+                            <div class="serie">
+                                <div class="icon"><i class="fa-solid fa-play"></i></div> PELICULA
+                            </div>
+                            <div class="title"></div>
+                            <div class="title-2"></div>
+                        </div>
+
+                        <div class="info"></div>
+                        <div class="controls">
+                            <button><i class="fa-solid fa-play"></i> Reproducir</button>
+                            <div style="display: flex; gap: 10px;">
+                                <button onclick="play()"><i class="fa-solid fa-play" id="iconPlay"></i></button>
+                                <button onclick="muted()"><i class="fa-solid fa-volume-high"
+                                        id="iconMuted"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="series-container" style="margin-top: 0.5rem;">
+                    <h2 style="margin-top: 1.5rem;">Tendencias</h2>
+                    <div class="grid-series">
+                        <img class="serie" id="myImage" onclick="modalInfo(this)"
+                            src="./img/peliculas/bktTDiqlP0uksG75UpqJZUX8FPH.jpg" alt="Lupin"
+                            data-trailer="yX5Py7lL5dw">
+
+                    </div>
+
+                    <h2 style="margin-top: 1.5rem;">Lo mas popular</h2>
+                    <div class="grid-series">
+                        <img class="serie" id="myImage" onclick="modalInfo(this)"
+                            src="./img/series/wiE9doxiLwq3WCGamDIOb2PqBqc.jpg" alt="Peaky Blinders"
+                            data-trailer="oVzVdvGIC7U">
+                    </div>
+                </div>
+
+                <!-- modal information serie -->
+                <div class="modal" id="modal">
+                    <div class="close" onclick="modal.style.visibility = 'hidden'">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                    <div class="modal-container">
+                        <div class="modal-img">
+                            <img id="img01">
+                        </div>
+                        <div class="modal-info">
+                            <div class="title" id="caption"></div>
+                            <div class="embed-container">
+                                <iframe src="" frameborder="0" id="frame" allowfullscreen></iframe>
+                            </div>
+                            <button><i class="fa-solid fa-play"></i> Ver ahora</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- --- --- --- -->
+            </div>
+        </div>
+    </div>
+
+    <script src="/js/global.js"></script>
+    <script src="./js/peliculas.js"></script>
+</body>
+</html>

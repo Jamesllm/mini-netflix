@@ -27,17 +27,6 @@
   margin-left: 20vw;
 }
 
-section {
-  height: 100vh;
-  /* padding: 30px; */
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
-
-section::-webkit-scrollbar {
-  width: 0px;
-}
 
 .vid {
   width: 100%;
@@ -97,17 +86,20 @@ section::-webkit-scrollbar {
 }
 
 .info-serie .info {
-  font-size: 17px;
-  margin-bottom: 12px;
+  font-size: 16px;
+  margin-top: 10px;
+  margin-bottom: 20px;
   visibility: visible;
+  /* height: 125px; */
+  /* min-height: 150px; */
+  /* overflow-y: auto; */
 }
 
 .series-container {
   background: var(--dark);
   width: 100%;
-  position: absolute;
   left: 0;
-  margin-top: 20px;
+  margin-top: 40px;
   padding: 10px 30px;
 }
 
@@ -146,9 +138,13 @@ section::-webkit-scrollbar {
   align-items: center;
 }
 
+.modal-full{
+  width: 100vw !important;
+}
+
 .modal .close {
   position: absolute;
-  top: 4rem;
+  top: 5rem;
   right: 24rem;
   background: var(--primary);
   width: 35px;
@@ -164,6 +160,10 @@ section::-webkit-scrollbar {
   align-items: center;
   cursor: pointer;
   font-size: 18px;
+}
+
+.modal-full .close-full-w{
+  right: 36rem;
 }
 
 .modal .close:hover {
@@ -273,6 +273,11 @@ section::-webkit-scrollbar {
   align-items: center;
   width: 100%;
   padding: 15px 35px;
+}
+
+.capa {
+  position: relative;
+  padding: 30px;
 }
 
 .content-o-s i{

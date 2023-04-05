@@ -25,10 +25,10 @@
             <div>
                 <img src="./img/logo.png" alt="">
                 <div class="list">
-                    <a href="#series" class="active">
+                    <a href="./index.html" class="active">
                         <p>Series</p>
                     </a>
-                    <a href="#peliculas">
+                    <a href="./peliculas.html">
                         <p>Peliculas</p>
                     </a>
                     <a href="">
@@ -43,9 +43,8 @@
 
         <div class="main-content">
 
-            <section id="series" class="" style="position: relative;">
-                <video class="vid" id="video-overlay" loop src="" poster="./img/banner.jpg"></video>
-                <!-- style="background-image: url('./img/banner.jpg');" -->
+            <div id="series" class="">
+                <video class="vid" id="video-overlay" loop></video>
                 <div class="capa">
                     <div class="info-serie">
                         <div id="display">
@@ -56,7 +55,7 @@
                             <div class="title-2"></div>
                         </div>
 
-                        <div class="info"></div>
+                        <p class="info"></p>
                         <div class="controls">
                             <button><i class="fa-solid fa-play"></i> Reproducir</button>
                             <div style="display: flex; gap: 10px;">
@@ -67,15 +66,6 @@
                         </div>
                     </div>
                 </div>
-
-
-                <style>
-                    .capa {
-                        position: relative;
-                        padding: 30px;
-                    }
-                </style>
-
                 <div class="series-container">
                     <h2 style="margin-top: 1.5rem;">Tendencias</h2>
                     <div class="grid-series">
@@ -123,20 +113,12 @@
                             data-trailer="tLdLTSnmnoA">
 
                         <img class="serie" id="myImage" onclick="modalInfo(this)"
-                            src="./img/series/bktTDiqlP0uksG75UpqJZUX8FPH.jpg" alt="Lupin" data-trailer="yX5Py7lL5dw">
-
-                        <img class="serie" id="myImage" onclick="modalInfo(this)"
                             src="./img/series/lB9OT1hH6ZXucAI4Z0JDBVlLKab.jpg" alt="Record of Ragnarok"
                             data-trailer="_9HxsIYORyE">
 
                         <img class="serie" id="myImage" onclick="modalInfo(this)"
                             src="./img/series/zGbLWPnxbRmuzlNXv1fKPaIKbmX.jpg" alt="La casa de papel"
                             data-trailer="3y-6iaveY6c">
-                    </div>
-
-                    <h2 style="margin-top: 1.5rem;">nwe</h2>
-                    <div class="grid-series">
-
                     </div>
                 </div>
 
@@ -159,16 +141,11 @@
                     </div>
                 </div>
                 <!-- --- --- --- -->
-            </section>
-
-            <section id="peliculas">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus facere tempora sapiente?
-                Repellendus error excepturi modi, incidunt culpa, suscipit enim tempore doloremque laboriosam est
-                voluptates facilis repellat quia labore? Veritatis.
-            </section>
+            </div>
         </div>
     </div>
 
+    <script src="./js/global.js"></script>
     <script src="./js/inicio.js"></script>
 </body>
 
