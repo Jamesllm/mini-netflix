@@ -11,6 +11,7 @@ const captionText = document.getElementById("caption");
 const img = document.getElementById("myImage");
 const sideNav = document.querySelector(".sidenav");
 const mainContent = document.querySelector(".main-content");
+const btnFavorite = document.getElementById('favorite')
 
 function closeMenu() {
   sideNav.classList.add("side-none");
@@ -80,6 +81,10 @@ function modalInfo(el) {
   modalFrame.src = frame;
   modalImage.src = imgSrc;
   captionText.innerHTML = altText;
+}
+
+function addFavorite(){
+  btnFavorite.classList.toggle('favorite-active')
 }
 
 window.onclick = function (e) {

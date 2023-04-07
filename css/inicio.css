@@ -333,7 +333,7 @@
 }
 
 @media screen and (max-width: 600px) {
-  .grid-series{
+  .grid-series {
     grid-template-columns: 100%;
   }
   .display-active {
@@ -350,7 +350,7 @@
 }
 
 @media screen and (max-width: 496px) {
-  .series-container{
+  .series-container {
     padding: 20px;
   }
   .info-serie {
@@ -425,3 +425,20 @@
     font-size: 22px;
   }
 }
+
+.favorite {
+  background: var(--white);
+}
+
+.favorite i{
+  color: #000;
+}
+
+.favorite-active {
+  background: red !important;
+  color: white !important;
+}
+.favorite-active i{
+  color: white !important;
+}
+

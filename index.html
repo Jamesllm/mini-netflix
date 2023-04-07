@@ -42,7 +42,6 @@
         </div>
 
         <div class="main-content">
-
             <div id="series" class="">
                 <video class="vid" id="video-overlay" loop></video>
                 <div class="capa">
@@ -124,8 +123,7 @@
                             src="./img/series/ncftkNAjIz2PBbUMY7T0CHVJP8d.jpg" alt="Lucifer" data-trailer="396t40wCnsk">
 
                         <img class="serie" id="myImage" onclick="modalInfo(this)"
-                            src="./img/series/bktTDiqlP0uksG75UpqJZUX8FPH.jpg" alt="Lupin"
-                            data-trailer="yX5Py7lL5dw">
+                            src="./img/series/bktTDiqlP0uksG75UpqJZUX8FPH.jpg" alt="Lupin" data-trailer="yX5Py7lL5dw">
                     </div>
                 </div>
 
@@ -140,7 +138,12 @@
                             <div class="embed-container">
                                 <iframe src="" frameborder="0" id="frame" allowfullscreen></iframe>
                             </div>
-                            <button><i class="fa-solid fa-play"></i> Ver ahora</button>
+                            <div style="display: flex; justify-content: space-between;">
+                                <button><i class="fa-solid fa-play"></i> Ver ahora</button>
+                                <button onclick="addFavorite()" id="favorite" class="favorite">
+                                    <i class="fa-solid fa-heart"></i>
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
