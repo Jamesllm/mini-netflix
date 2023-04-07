@@ -1,36 +1,51 @@
 <h1 align="center">Mini Netflix</h1>
 
-<p align="center"><img width="400px" alt="coding"  src="./animate.gif"></p>
-
-<div>
-
-### English 🇺🇸
-
+<div align="center">
+<img width="400px" alt="coding"  src="./animate.gif">
 <p>
-The <b>"Mini Netflix"</b> collaborative project is a base project (PA) that aims to build a Netflix-like interface using HTML5 within two weeks. Unlike Netflix, this project does not require a database to work. The project will be developed as a team, and the end result will be an intuitive and attractive user interface that offers an experience similar to what users can find on Netflix.
-</p>
-
-### Spanish 🇵🇪
-
-<p>
-El proyecto colaborativo <b>"Mini Netflix"</b> es un proyecto base (PA) cuyo objetivo es construir una interfaz similar a la de Netflix utilizando HTML5 en un plazo de dos semanas. A diferencia de Netflix, este proyecto no requiere una base de datos para funcionar. El proyecto se desarrollará en equipo, y el resultado final será una interfaz de usuario intuitiva y atractiva que ofrezca una experiencia similar a la que los usuarios pueden encontrar en Netflix.
+Elaborar una interfaz similar a Netflix utilizando HTML5
 </p>
 </div>
 
 
-## Team members:
-<p>Desing: Llapapasca Montes, Ronal James</p> 
-<p>Color Palet: Romero Collazos, Juan Bladimir</p> 
+## Miembros del equipo:
+
+|Nº|    Responsabilidad        | Nombres                          |
+|--|---------------------------|----------------------------------|
+|1 | Diseño y elaboración      |Llapapasca Montes, Ronal James    |
+|2 | Elegir la paleta de color |Romero Collazos, Juan Bladimir    |
+|3 | Elaboración del logo      |Vasquez Villegas, Kevin Jeferson  |
 
 ## Demo
-
+[Github Pages](https://jamesllm.github.io/mini-netflix/)
 
 ## Screenshots
 
-<h3>Desktop</h3>
+<h3>Escritorio</h3>
 <img src="./interfaz/Desktop-1.png" />
 
-<h3>Mobile</h3>
+<h3>Mobil</h3>
 <div style="display: flex; gap:20px;">
 <img width="300" height="400" src="./interfaz/Tablet.png" />
 <img width="300" height="400" src="./interfaz/Tablet-open-toggle.png" /></div>
+
+### To do's
+
+- [x] Video en la parte superior de la pagina
+  - [x] Boton de muted / volumen
+  - [x] Boton para pausar / reproducir video 
+- Almacenamiento de videos
+  - [x] Local
+  - [x] Dropbox
+- Almacenamiento de imagenes
+  - [x] Local
+  - [ ] Sitio externo
+- [x] Boton para buscar en la pagina
+  - [ ] Funcionamiento de este mismo
+- [ ] Switch para cambiar entre tema oscuro y claro
+- [x] Guardar en localStorage las preferencias del Sidenav 
+- [x] Modal para visualizar el trailer de cada pelicula o serie
+  - [x] Al dar click fuera del modal, este se cierra
+- [ ] Guardar en un Array la lista de series/peliculas que le gustan y mostrarlos en la pagina **Mi Lista**
+- [ ] Consumir la data a traves de una API o una base de datos
+- [x] Responsive design

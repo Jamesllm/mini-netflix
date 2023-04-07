@@ -11,26 +11,40 @@ const captionText = document.getElementById("caption");
 const img = document.getElementById("myImage");
 const sideNav = document.querySelector(".sidenav");
 const mainContent = document.querySelector(".main-content");
-const modalClose = document.querySelector(".modal .close");
 
 function closeMenu() {
   sideNav.classList.add("side-none");
   modal.classList.add("modal-full");
-  modalClose.classList.add("close-full-w");
+
   if (sideNav.classList.contains("side-none")) {
     mainContent.classList.add("main-full");
-  } else {
-    console.log("nafa");
+    // guardado en localStorage
+    console.log("side close");
+    localStorage.setItem("side-nav-close", "true");
   }
+}
+
+if (localStorage.getItem("side-nav-close") === "true") {
+  sideNav.classList.toggle("side-none");
+  mainContent.classList.toggle("main-full");
+  modal.classList.toggle("modal-full");
+} else {
+  sideNav.classList.remove("side-none");
+  mainContent.classList.remove("main-full");
 }
 
 function openMenu() {
   sideNav.classList.remove("side-none");
   mainContent.classList.remove("main-full");
   modal.classList.remove("modal-full");
-  modalClose.classList.remove("close-full-w");
-}
 
+  if(sideNav.classList[1] != 'side-none') {
+    sideNav.classList.remove("side-none");
+    mainContent.classList.remove("main-full");
+    modal.classList.remove("modal-full");
+    localStorage.setItem("side-nav-close", "false");
+  }
+}
 
 function play() {
   if (video.paused == false) {

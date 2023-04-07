@@ -2,12 +2,12 @@
 const dataPeliculas = [
   {
     id: 1,
-    title: "Lupin",
+    title: "Alerta roja",
     title2: "",
-    type: "Serie",
-    info: "Inspirado por las aventuras de Arsène Lupin, el ladrón de guante blanco Assane Diop se propone vengar la injusticia sufrida por su padre a manos de una familia rica.",
-    video: "./videos/lupin-trailer.mp4",
-    poster: "./img/peliculas/bktTDiqlP0uksG75UpqJZUX8FPH.jpg",
+    type: "Pelicula",
+    info: "Cuando la Interpol envía una Alerta roja, significa que los departamentos de Policía de todo el mundo deben estar alerta para capturar a los criminales más buscados. Todas las alarmas saltan cuando un temerario robo une al mejor agente del FBI (Johnson) con dos criminales rivales entre sí (Gadot & Reynolds). Una coincidencia que hará que suceda lo impredecible.",
+    video: "https://www.dropbox.com/s/54oc6ew359vjwg1/alerta-roja.mp4?raw=1",
+    poster: "./img/peliculas/7ajHGIAYNMiIzejy1LJWdPrcAx8.jpg",
   },
 ];
 
